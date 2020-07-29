@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/CSS/Style.css" />
+  <link rel="stylesheet" href="CSS/Style.css" />
   <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
   <script src="/Script/JavaScript.js" defer></script>
   <title>Portfolio</title>
@@ -13,7 +14,7 @@
   <header class="l-header">
     <nav class="nav bd-grid">
       <div>
-        <a href="#" class="nav_logo">Bohdan Sivak</a>
+        <a href="#home" class="nav__logo">Bohdan Sivak</a>
       </div>
 
       <div class="nav__menu" id="nav-menu">
@@ -36,15 +37,15 @@
     <section class="home" id="home">
       <div class="home__container bd-grid">
         <h1 class="home__title"><span>Hi, <br />
-            I'm <span style="color: #c0392b;">Bohdan</span>, <br />
+            I'm <span style="color: var(--dark-color);">Bohdan</span>, <br />
             Self-taught <br />
             software developer.</span></h1>
 
         <div class="home__scroll">
           <a href="#about" class="home__scroll-link"><i class="bx bx-up-arrow-alt""></i>Scroll down</a>
         </div>
-
-        <img src=" Img/myPic.png" alt="" class="home__img">
+    
+          <img src=" Img/myPic.png" alt="" class="home__img">
         </div>
     </section>
 
@@ -66,19 +67,18 @@
             know how to find the answer and I will find the answer.</p>
         </div>
         <div class="about__social">
-          <a href="https://www.linkedin.com/in/bohdan-sivak-b630921b2/" class="about__social-icon"><i
+          <a href="https://www.linkedin.com/in/bohdan-sivak-b630921b2/" target="_blank" class="about__social-icon"><i
               class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/n1sb0?tab=repositories" class="about__social-icon"><i
+          <a href="https://github.com/n1sb0?tab=repositories" target="_blank" class="about__social-icon"><i
               class="bx bxl-github"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100017275208092" class="about__social-icon"><i
-              class='bx bxl-facebook'></i></a>
         </div>
       </div>
     </section>
 
     <section class="skills section" id="skills">
       <h2 class="section-title">Skills</h2>
-      <div class="skills__container">
+
+      <div class="skills__container bd-grid">
         <div class="skills__box">
           <h3 class="skills__subtitle">Development</h3>
           <span class="skills__name">Html</span>
@@ -94,17 +94,93 @@
           <span class="skills__name">Adobe Illustator</span>
           <span class="skills__name">Adobe Photoshop</span>
           <span class="skills__name">Adobe Primiere Pro / Sony Vegas Pro</span>
+        </div>
 
-          <div class="skills__img">
-            <img src="Img/skill.jpg" alt="">
+        <div class="skills__img">
+          <img src="Img/skill.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section-title">Portfolio</h2>
+
+      <div class="portfolio__container bd-grid">
+        <div class="portfolio__img">
+          <img src="Img/PlayMePrev.png" alt="">
+
+          <div class="portfolio__link">
+            <a href="https://github.com/n1sb0/PlayMeApp" target="_blank" class="portfolio__link-name">View details</a>
+          </div>
+        </div>
+
+        <div class="portfolio__img">
+          <img src="Img/HtmlCssJsPrev.png" alt="">
+
+          <div class="portfolio__link">
+            <a href="https://github.com/n1sb0/MyWebSite-Portofolio" target="_blank" class="portfolio__link-name">View
+              details</a>
           </div>
         </div>
       </div>
     </section>
 
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
 
+      <div class="contact__container bd-grid">
+        <div class="contact__info">
+          <h3 class="contact__subtitle">EMAIL</h3>
+          <span class="contact__text">bohdan.sivak@gmail.com</span>
+
+          <h3 class="contact__subtitle">PHONE</h3>
+          <span class="contact__text">+39 3512822890</span>
+
+          <h3 class="contact__subtitle">ADRESS</h3>
+          <span class="contact__text">Trento (TN) Italy</span>
+        </div>
+
+        <form action="" class="contact__form">
+          <div class="contact__inputs">
+            <input type="text" placeholder="Name" class="contact__input">
+            <input type="mail" placeholder="Email" class="contact__input">
+          </div>
+
+          <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+          <input type="submit" value="Submit" class="contact__button">
+        </form>
+      </div>
+    </section>
   </main>
 
+  <footer class="footer section">
+    <div class="footer__container bd-grid">
+      <div class="footer__data">
+        <h2 class="footer__title">BOHDAN SIVAK</h2>
+        <p class="footer__text">I'm Bohdan Sivak and this is my personal website</p>
+      </div>
+
+      <div class="footer__data">
+        <h2 class="footer__title">EXPLORE</h2>
+        <ul>
+          <li><a href="#home" class="footer__link">Home</a></li>
+          <li><a href="#about" class="footer__link">About</a></li>
+          <li><a href="#skills" class="footer__link">Skills</a></li>
+          <li><a href="#portofolio" class="footer__link">Portfolio</a></li>
+          <li><a href="#contact" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__data">
+        <h2 class="footer_title">Social</h2>
+        <a href="https://www.instagram.com/n1sb0/" target="_blank" class="footer__social"><i
+            class='bx bxl-instagram'></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100017275208092" target="_blank" class="footer__social"><i
+            class='bx bxl-facebook'></i></a>
+        <a href="https://vk.com/bogdan.naic" target="_blank" class="footer__social"><i class='bx bxl-vk'></i></a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
