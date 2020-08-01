@@ -181,7 +181,7 @@ img{
     background-color: var(--first-color);
 }
 
-/*home*/
+/*===== Home Page =====*/
 .home  {
     position: relative;
     background-color: var(--first-color);
@@ -224,6 +224,7 @@ img{
     width: 426px;
 }
 
+/*===== About Page =====*/
 .about__container{
     justify-items: center;
     row-gap: 2rem;
@@ -259,6 +260,7 @@ img{
    font-size: 2rem;
 }
 
+/*===== Skills Page =====*/
 .skills__container{
     row-gap: 2rem;
 }
@@ -288,6 +290,8 @@ img{
     border-radius: 2rem;
 }
 
+
+/*===== Portfolio Page =====*/
 .portfolio{
     background-color: var(--white-color);
 }
@@ -325,6 +329,8 @@ img{
     bottom: 0;
 }
 
+
+/*===== Contact Page =====*/
 .contact__container{
     row-gap: 2rem;
 }
@@ -369,6 +375,8 @@ img{
     cursor: pointer;
 }
 
+
+/*===== Footer =====*/
 .footer{
     background-color: var(--dark-color);
 }
@@ -400,6 +408,8 @@ img{
     color: var(--first-color);
 }
 
+
+/*===== Base 768px =====*/
 @media screen and (min-width: 768px){
 
     .home__title > span{
@@ -498,6 +508,7 @@ img{
 
 }
 
+/*===== BASE 1024px =====*/
 @media screen and (min-width: 1024px){
     .bd-grid{
         margin-left: auto;

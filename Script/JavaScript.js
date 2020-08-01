@@ -13,6 +13,7 @@ showMenu('nav-toggle', 'nav-menu')
 
 const navLink = document.querySelectorAll('.nav__link')
 
+/*===== ACTIVATE LINK =====*/
 function linkAction() {
     const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show')
@@ -24,6 +25,7 @@ const sections = document.querySelectorAll('section[id]')
 
 window.addEventListener('scroll', scrollActive)
 
+/*===== SCROLL ACTIVE =====*/
 function scrollActive() {
     const scrollY = window.pageYOffset
 
